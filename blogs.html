@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <!-- fonts Poppins CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind CSS CDN-->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .font-poppins {
+            font-family: "Poppins", serif;
+        }
+    </style>
+</head>
+<body class="bg-[#e6ecfc] font-poppins">
+    <header class="bg-[#FFFFFF] max-w-6xl mx-auto px-4 py-3 rounded-2xl mt-5 mb-5">
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img class="w-10" src="assets/logo.png" alt="">
+                <h1 class="text-3xl font-light">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div>
+                <button class="bg-[#3752FD] text-white border-none rounded-md px-3 py-2">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-6xl mx-auto mb-5">
+        <h1 class="text-2xl font-bold text-center mb-5">Blogs</h1>
+
+        <!-- Question Cards Section -->
+         <!-- Question 01 -->
+         <div class="bg-[#FFFFFF] rounded-2xl mb-3">
+            <div class="border-b-1 border-dashed border-[#a4aff3]/40">
+                <p class="px-4 py-3 font-bold">
+                    Question-1: What are the different ways to select an element in the DOM?
+                </p>
+            </div>
+            <p class="px-4 py-3">
+                There are several ways to select an element in the DOM. These are: getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectroAll, getElementsByName etc. The most using methods are: getElementById, querySelector, querySelectroAll.
+            </p>
+         </div>
+
+         <!-- Question 02 -->
+         <div class="bg-[#FFFFFF] rounded-2xl mb-3">
+            <div class="border-b-1 border-dashed border-[#a4aff3]/40">
+                <p class="px-4 py-3 font-bold">
+                    Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </p>
+            </div>
+            <p class="px-4 py-3">
+                By using innerHTML we can access or set the HTML tag inside an element. <br>
+                By using innerText we can access or set the text of an element and <br> using textContent we can access or set all the text content including HTML tag of an element.
+            </p>
+         </div>
+         <!-- Question 03 -->
+         <div class="bg-[#FFFFFF] rounded-2xl mb-3">
+            <div class="border-b-1 border-dashed border-[#a4aff3]/40">
+                <p class="px-4 py-3 font-bold">
+                    Question-3: What is event delegation in the DOM?
+                </p>
+            </div>
+            <p class="px-4 py-3">
+                The event delegation is a powerful technique by which we can control all the child element of a parent element by adding only one eventListener. In this way we have not to add seperate eventListener for all the child element, only adding single eventListener to the parent element.
+            </p>
+         </div>
+
+         <!-- Question 04 -->
+         <div class="bg-[#FFFFFF] rounded-2xl mb-3">
+            <div class="border-b-1 border-dashed border-[#a4aff3]/40">
+                <p class="px-4 py-3 font-bold">
+                    Question-4: What is event bubbling in the DOM?
+                </p>
+            </div>
+            <p class="px-4 py-3">
+                Event Bubbling is a mechanism of DOM where the events that occur on an element such as clicks, mouseovers etc. flow upward from that element to its parent element.
+            </p>
+         </div>
+         <!-- Question 05 -->
+         <div class="bg-[#FFFFFF] rounded-2xl mb-3">
+            <div class="border-b-1 border-dashed border-[#a4aff3]/40">
+                <p class="px-4 py-3 font-bold">
+                    Question-5: How do you create, add, and remove elements using JavaScript?
+                </p>
+            </div>
+            <p class="px-4 py-3">
+                To create elements I use document.createElement() method. <br>
+                To add elements I use appendChild(), append() and prepend(). <br>
+                To remove elements I use removeChild() or remove(). 
+            </p>
+         </div>
+    </main>
+
+    
+</body>
+</html>
