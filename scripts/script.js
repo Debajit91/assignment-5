@@ -6,3 +6,7 @@ document.getElementById('themeBtn').addEventListener('click', function(event){
     document.body.style.backgroundColor = colors[currentColorIndex];
     currentColorIndex = (currentColorIndex +1) % colors.length;
 })
+
+document.getElementById('discoverNew').addEventListener('click', function(){
+    window.location.href = "blogs.html"
+})
