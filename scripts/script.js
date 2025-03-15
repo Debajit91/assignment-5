@@ -20,8 +20,8 @@ function updateDayDate(){
     const month = new Date().toLocaleString('en-us', {month: 'short'});
     const day = new Date().getDate();
     const year = new Date().getFullYear();
-    const formattedDate = `${month} ${day} ${year}`;
-    document.getElementById('currentDay').firstChild.textContent = `${shortDay} ,`;
+    const formattedDate = month + ' ' +  day + ' ' + year;
+    document.getElementById('currentDay').firstChild.textContent = shortDay + ' ,';
     document.getElementById('currentDate').innerText = formattedDate;
 }
 
@@ -61,7 +61,7 @@ for(let button of completeButtons){
         
         const activityLog = document.getElementById('activityLog');
         const logEntry = document.createElement('div');
-        logEntry.innerText = `You have completed the ${taskName} at ${new Date().toLocaleTimeString()}`;
+        logEntry.innerText = 'You have completed the ' + taskName + ' at ' + new Date().toLocaleTimeString();
         logEntry.classList.add('log-entry');
         activityLog.appendChild(logEntry);
         
